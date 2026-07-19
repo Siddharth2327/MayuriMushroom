@@ -49,9 +49,10 @@ export default function Navbar() {
         scrolled ? "py-2" : "py-4"
       }`}
     >
-      <motion.div
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+       <motion.div
+        style={{ position: "relative" }}
+        initial={{ top: -24, opacity: 0 }}
+        animate={{ top: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
