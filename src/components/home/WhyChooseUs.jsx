@@ -21,7 +21,7 @@ export default function WhyChooseUs() {
             return (
               <SectionReveal key={item.title} delay={i * 0.12} type="up">
                 <TiltCard className="h-full">
-                  <GlassCard className="h-full">
+                  <GlassCard className="h-full" blur={false}>
                     <div className="w-14 h-14 rounded-2xl bg-primary/10 grid place-items-center mb-6 group-hover:bg-primary transition-colors">
                       <Icon size={28} className="text-primary" />
                     </div>
