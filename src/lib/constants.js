@@ -153,5 +153,5 @@ export const SOCIAL_LINKS = [
   { label: "WhatsApp", icon: "whatsapp", href: "https://wa.me/919840776279" },
   { label: "Instagram", icon: "instagram", href: "https://instagram.com" },
   { label: "Facebook", icon: "facebook", href: "https://facebook.com" },
-  { label: "Google Business", icon: "google", href: "https://business.google.com" },
+  { label: "Google Business", icon: "google", href: "https://www.google.com/maps/place/Mayuri+Mushrooms/@12.9340951,80.2140621,17z/data=!4m14!1m7!3m6!1s0x3a525d006a763d1b:0x8cc279d66cc5796b!2sMayuri+Mushrooms!8m2!3d12.9340951!4d80.216637!16s%2Fg%2F11yd1rllkp!3m5!1s0x3a525d006a763d1b:0x8cc279d66cc5796b!8m2!3d12.9340951!4d80.216637!16s%2Fg%2F11yd1rllkp?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D" },
 ];

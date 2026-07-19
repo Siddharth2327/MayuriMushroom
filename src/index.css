@@ -104,32 +104,4 @@ body {
   background: radial-gradient(circle at 30% 30%, #ffffff, var(--color-secondary));
 }
 
-html.dark body {
-  background-color: var(--color-bark);
-  color: var(--color-cream);
-}
-html.dark .glass {
-  background: rgba(92, 64, 51, 0.55);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-html.dark .bg-white\/40 {
-  background-color: rgba(255, 255, 255, 0.04) !important;
-}
-html.dark .text-bark {
-  color: var(--color-cream);
-}
-html.dark .text-bark\/70,
-html.dark .text-bark\/65,
-html.dark .text-bark\/60,
-html.dark .text-bark\/50 {
-  color: rgba(250, 248, 243, 0.65);
-}
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
-    scroll-behavior: auto !important;
-  }
-}

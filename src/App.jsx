@@ -8,7 +8,7 @@ import Footer from "./components/layout/Footer";
 import LoadingScreen from "./components/layout/LoadingScreen";
 import ScrollProgress from "./components/layout/ScrollProgress";
 import CursorGlow from "./components/layout/CursorGlow";
-import ThemeToggle from "./components/layout/ThemeToggle";
+import WhatsAppBadge from "./components/layout/WhatsAppBadge";
 import PageTransition from "./components/layout/PageTransition";
 
 import Home from "./pages/Home";
@@ -41,7 +41,7 @@ export default function App() {
       <LoadingScreen show={loading} />
       <ScrollProgress />
       <CursorGlow />
-      <ThemeToggle />
+     <WhatsAppBadge />
       <Navbar />
       <ScrollToTop />
       <Suspense fallback={<div className="min-h-screen" />}>
