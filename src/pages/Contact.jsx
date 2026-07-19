@@ -80,7 +80,7 @@ export default function Contact() {
             <div className="rounded-3xl overflow-hidden glass h-64">
               <iframe
                 title="Mayuri Mushrooms Location"
-                src="https://www.google.com/maps?q=Pallikaranai,Chennai&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.589335465038!2d80.21406207515638!3d12.934095087377841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d006a763d1b%3A0x8cc279d66cc5796b!2sMayuri%20Mushrooms!5e0!3m2!1sen!2sin!4v1784443153571!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

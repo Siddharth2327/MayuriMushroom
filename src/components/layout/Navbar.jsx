@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -17,6 +17,22 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => setOpen(false), [location.pathname]);
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const handleOutsideClick = (e) => {
+      if (headerRef.current && !headerRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleOutsideClick);
+    document.addEventListener("touchstart", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+      document.removeEventListener("touchstart", handleOutsideClick);
+    };
+  }, [open]);
 
   return (
     // IMPORTANT: this element is `position: fixed` and must never also carry
@@ -28,6 +44,7 @@ export default function Navbar() {
     // event forced a recompute. The entrance animation lives on the inner
     // wrapper below instead, which is safe because that div is not fixed.
     <header
+      ref={headerRef}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled ? "py-2" : "py-4"
       }`}

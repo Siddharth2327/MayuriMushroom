@@ -45,7 +45,7 @@ export default function AnimatedButton({
       }}
       className={`${base} ${styles[variant]} ${className}`}
     >
-      <span className="relative z-10">{children}</span>
+      <span className="relative z-10 inline-flex items-center gap-2 whitespace-nowrap">{children}</span>
       {ripples.map((r) => (
         <span
           key={r.id}
